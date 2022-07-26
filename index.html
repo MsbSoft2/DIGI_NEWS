@@ -1,0 +1,1328 @@
+<html lang="en" dir="rtl">
+
+<head>
+    <!-- status bar color -->
+    <meta name="theme-color" content="#32d296" />
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="googlebot" content="index,follow">
+    <meta name="robots" content="noodp,noydir">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="icon" href="assets/images/logo2.png">
+    <!-- Title -->
+    <title>DIGINEWS - دیجی نیوز</title>
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/uikit-rtl.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/fontawesome-free-5.15.3-web.min.css">
+    <link rel="stylesheet" href="assets/css/Custom_Style.css">
+</head>
+
+<body>
+
+    <section class="uk-background-secondary text-white py-3">
+        <div class="container-md">
+            <div class="small">
+                <span class="float-right">
+                    <i class="fas fa-bolt uk-text-danger ml-2"></i>
+                    دیجی نیوز _ قالب رسپانسیو
+                </span>
+                <span>
+                    <i class="fas fa-calendar-alt ml-2 text-white"></i>
+                    فروردین 1400
+
+                    <i class="fas fa-clock mx-2 text-white"></i>
+                    <span id="time"></span>
+
+                </span>
+                <!-- Set Date Time Now -->
+            </div>
+        </div>
+    </section>
+    <!-- Navbar Date Time -->
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="text-right my-2">
+                        <a class="text-decoration-none" href="./index.html">
+                            <img class="logo2" src="assets/images/logo2.png" alt="logo Main">
+                            <img class="logo1" src="assets/images/logo1.png" alt="logo Title">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="my-3">
+                        <a class="text-decoration-none text-dark uk-button-text" href="./Login.html">ورود</a>
+                        <span class="mx-3">/</span>
+                        <a class="text-decoration-none text-dark uk-button-text" href="./Register.html">عضویت</a>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-1">
+                    <div class="uk-margin">
+                        <div class="uk-inline uk-width">
+                            <button type="submit" class="uk-form-icon rounded-circle" uk-icon="icon: search"></button>
+                            <input style="width: 100%;" class="uk-input uk-display-inline-block  rounded-pill"
+                                type="text" placeholder="جست و جو ...">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Container -->
+    </section>
+    <!-- Logo -->
+
+    <nav class="uk-navbar-container uk-box-shadow-large" uk-navbar>
+        <div class="uk-navbar-right container">
+
+            <ul class="uk-navbar-nav  uk-subnav-divider text-right">
+                <li class="uk-active">
+                    <a class="text-center uk-button-text" href="#">
+                        <span class="fas fa-home ml-2"></span>
+                        <span class="sfont">خانه</span>
+                    </a>
+                </li>
+                <!-- Navbar menu item -->
+
+                <li>
+                    <a class="text-center uk-button-text" href="#">
+                        <span class="fas fa-rss ml-2"></span>
+                        <span class="sfont">اخبار</span>
+                    </a>
+                    <div class="uk-navbar-dropdown uk-border-rounded"
+                        uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify;">
+
+                        <div uk-grid>
+                            <div class="uk-width-auto@m">
+                                <ul class="uk-tab-left"
+                                    uk-tab="connect: #component-tab-left; animation: uk-animation-fade">
+                                    <li><a href="#">سیاسی</a></li>
+                                    <li><a href="#">اقتصادی</a></li>
+                                    <li><a href="#">فرهنگی</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="uk-width-expand@m">
+                                <ul id="component-tab-left" class="uk-switcher">
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-md-4 text-right">
+                                                <nav class="nav flex-column">
+                                                    <a class="nav-link link-menu" href="#">مجلس</a>
+                                                    <a class="nav-link link-menu" href="#">دولت</a>
+                                                    <a class="nav-link link-menu" href="#">احزاب و تشکل ها</a>
+                                                </nav>
+                                            </div>
+                                            <div class="col-md-4 text-right">
+                                                <nav class="nav flex-column">
+                                                    <a class="nav-link link-menu" href="#">سیاست خارجه</a>
+                                                    <a class="nav-link link-menu" href="#">برنامه های ویژه</a>
+                                                    <a class="nav-link link-menu" href="#">احزاب و تشکل ها</a>
+                                                </nav>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <img src="assets/images/Web/web (1).png" width="300">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-md-3 text-right">
+                                                <nav class="nav flex-column">
+                                                    <a class="nav-link link-menu" href="#">بانک</a>
+                                                    <a class="nav-link link-menu" href="#">بیمه</a>
+                                                    <a class="nav-link link-menu" href="#">بورس</a>
+                                                </nav>
+                                            </div>
+                                            <div class="col-md-3 text-right">
+                                                <nav class="nav flex-column">
+                                                    <a class="nav-link link-menu" href="#">صنعت</a>
+                                                    <a class="nav-link link-menu" href="#">تجارت</a>
+                                                </nav>
+                                            </div>
+                                            <div class="col-md-3 text-right">
+                                                <nav class="nav flex-column">
+                                                    <a class="nav-link link-menu" href="#">نبض بازار</a>
+                                                    <a class="nav-link link-menu" href="#">استخدام</a>
+                                                </nav>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img src="assets/images/Web/web (2).png" width="300">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-md-4 text-right">
+                                                <nav class="nav flex-column">
+                                                    <a class="nav-link link-menu" href="#">رادیو تلویزیون</a>
+                                                    <a class="nav-link link-menu" href="#">سینما</a>
+                                                    <a class="nav-link link-menu" href="#">هنرمندان</a>
+                                                </nav>
+                                            </div>
+                                            <div class="col-md-4 text-right">
+                                                <nav class="nav flex-column">
+                                                    <a class="nav-link link-menu" href="#">ادبیات</a>
+                                                    <a class="nav-link link-menu" href="#">میراث و گردشگری</a>
+                                                    <a class="nav-link link-menu" href="#">قرآن و عترت</a>
+                                                </nav>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <img src="assets/images/Web/web (3).png" width="300">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </li>
+                <!-- Navbar menu item -->
+
+                <li>
+                    <a class="text-center uk-button-text" href="#">
+                        <span class="fas fa-circle-notch ml-2"></span>
+                        <span class="sfont">تکنولوژی</span>
+                    </a>
+                    <div class="uk-navbar-dropdown uk-border-rounded"
+                        uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify;">
+
+                        <div uk-grid>
+                            <div class="uk-width-auto@m">
+                                <ul class="uk-tab-left"
+                                    uk-tab="connect: #component-tab-left; animation: uk-animation-fade">
+                                    <li><a href="#">موبایل</a></li>
+                                    <li><a href="#">لپ تاپ</a></li>
+                                    <li><a href="#">تلویزیون</a></li>
+                                    <li><a href="#">ساعت</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="uk-width-expand@m">
+                                <ul id="component-tab-left" class="uk-switcher">
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-md-4 text-right">
+                                                <nav class="nav flex-column">
+                                                    <a class="nav-link link-menu" href="#">سامسونگ</a>
+                                                    <a class="nav-link link-menu" href="#">اپل</a>
+                                                    <a class="nav-link link-menu" href="#">ال جی</a>
+                                                    <a class="nav-link link-menu" href="#">هوآوی</a>
+                                                </nav>
+                                            </div>
+                                            <div class="col-md-4 text-right">
+                                                <nav class="nav flex-column">
+                                                    <a class="nav-link link-menu" href="#">شیائومی</a>
+                                                    <a class="nav-link link-menu" href="#">بلک بری</a>
+                                                </nav>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <img src="assets/images/Mobile/mb (1).jpg" width="300">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-md-4 text-right">
+                                                <nav class="nav flex-column">
+                                                    <a class="nav-link link-menu" href="#">مک بوک</a>
+                                                    <a class="nav-link link-menu" href="#">ایسوس</a>
+                                                    <a class="nav-link link-menu" href="#">ایسر</a>
+                                                </nav>
+                                            </div>
+                                            <div class="col-md-4 text-right">
+                                                <nav class="nav flex-column">
+                                                    <a class="nav-link link-menu" href="#">ماکروسافت</a>
+                                                    <a class="nav-link link-menu" href="#">سامسونگ</a>
+                                                </nav>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <img src="assets/images/Laptap/sm-3.jpg" width="300">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-md-4 text-right">
+                                                <nav class="nav flex-column">
+                                                    <a class="nav-link link-menu" href="#">سامسونگ</a>
+                                                    <a class="nav-link link-menu" href="#">ال جی</a>
+                                                    <a class="nav-link link-menu" href="#">اپل تی وی</a>
+                                                </nav>
+                                            </div>
+                                            <div class="col-md-4 text-right">
+                                                <nav class="nav flex-column">
+                                                    <a class="nav-link link-menu" href="#">سامسونگ</a>
+                                                    <a class="nav-link link-menu" href="#">ال جی</a>
+                                                    <a class="nav-link link-menu" href="#">اپل تی وی</a>
+                                                </nav>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <img src="assets/images/Laptap/img-card.jpg" width="300">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-md-4 text-right">
+                                                <nav class="nav flex-column">
+                                                    <a class="nav-link link-menu" href="#">سامسونگ</a>
+                                                    <a class="nav-link link-menu" href="#">اپل</a>
+                                                    <a class="nav-link link-menu" href="#">سیتی زن</a>
+                                                    <a class="nav-link link-menu" href="#">رولکس</a>
+                                                </nav>
+                                            </div>
+                                            <div class="col-md-4 text-right">
+                                                <nav class="nav flex-column">
+                                                    <a class="nav-link link-menu" href="#">سامسونگ</a>
+                                                    <a class="nav-link link-menu" href="#">اپل</a>
+                                                    <a class="nav-link link-menu" href="#">سیتی زن</a>
+                                                    <a class="nav-link link-menu" href="#">رولکس</a>
+                                                </nav>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <img src="assets/images/Laptap/img-card-2.jpg" width="300">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </li>
+                <!-- Navbar menu item -->
+
+                <li>
+                    <a class="sfont text-center uk-button-text" href="#">
+                        <span class="fas fa-file-contract ml-2"></span>
+                        <span class="sfont">صفحات</span>
+                    </a>
+                    <div class="uk-navbar-dropdown uk-border-rounded"
+                        uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify;">
+
+                        <div uk-grid>
+                            <div class="uk-width-auto@m">
+                                <ul class="uk-tab-left"
+                                    uk-tab="connect: #component-tab-left; animation: uk-animation-fade">
+                                    <li><a href="#">اصلی</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="uk-width-expand@m">
+                                <ul id="component-tab-left" class="uk-switcher">
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-md-3 text-right">
+                                                <nav class="nav flex-column">
+                                                    <a class="nav-link link-menu" href="./index.html">صفحه اصلی</a>
+                                                    <a class="nav-link link-menu" href="./ContactUs.html">تماس با ما</a>
+
+                                                </nav>
+                                            </div>
+                                            <div class="col-md-3 text-right">
+                                                <nav class="nav flex-column">
+                                                    <a class="nav-link link-menu" href="./Login.html">صفحه ورود</a>
+                                                    <a class="nav-link link-menu" href="./Register.html">صفحه ثبت
+                                                        نام</a>
+                                                    <a class="nav-link link-menu" href="./Profile.html">صفحه پروفایل</a>
+                                                </nav>
+                                            </div>
+                                            <div class="col-md-3 text-right">
+                                                <nav class="nav flex-column">
+                                                    <a class="nav-link link-menu" href="./404.html">صفحه 404</a>
+                                                    <a class="nav-link link-menu" href="./Welcome.html">صفحه خوش آمد
+                                                        گویی</a>
+                                                    <a class="nav-link link-menu" href="./password-forgot.html">صفحه
+                                                        فراموشی رمز</a>
+                                                </nav>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img src="assets/images/Web/web (3).png" width="300">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </li>
+                <!-- Navbar menu item -->
+
+
+
+            </ul>
+
+        </div>
+    </nav>
+    <!-- Navbar Menu -->
+
+    <header>
+        <div class="container my-4">
+            <div class="row">
+                <div class="col-lg-8 col-md-12">
+                    <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: fade">
+
+                        <ul class="uk-slideshow-items uk-border-rounded uk-box-shadow-medium">
+
+                            <li>
+                                <a href="#">
+                                    <img src="assets/images/Slider/image (1).jpg" alt="" uk-cover>
+                                </a>
+                                <div
+                                    class="uk-overlay uk-overlay-default uk-position-bottom-right uk-position-small uk-transition-slide-right text-right uk-border-rounded">
+                                    <h3 class="uk-margin-remove sfont">جدیدترین تکنولوژی ها</h3>
+                                    <p class="uk-margin-remove">
+                                    <div>
+                                        <span class="fas fa-star text-warning"></span>
+                                        <span class="fas fa-star text-warning"></span>
+                                        <span class="fas fa-star text-warning"></span>
+                                    </div>
+                                    <span class="fas fa-user-alt ml-2"></span>
+                                    نویسنده : استیو جابز
+                                    </p>
+                                </div>
+                            </li>
+                            <!-- Item Slider -->
+
+                            <li>
+                                <a href="#">
+                                    <img src="assets/images/Slider/image (2).jpg" alt="" uk-cover>
+                                </a>
+                                <div
+                                    class="uk-overlay uk-overlay-default uk-position-bottom-right uk-position-small uk-transition-slide-right text-right uk-border-rounded">
+                                    <h3 class="uk-margin-remove sfont">جدیدترین تکنولوژی ها</h3>
+                                    <p class="uk-margin-remove">
+                                    <div>
+                                        <span class="fas fa-star text-warning"></span>
+                                        <span class="fas fa-star text-warning"></span>
+                                        <span class="fas fa-star text-warning"></span>
+                                    </div>
+                                    <span class="fas fa-user-alt ml-2"></span>
+                                    نویسنده : استیو جابز
+                                    </p>
+                                </div>
+                            </li>
+                            <!-- Item Slider -->
+
+                            <li>
+                                <a href="#">
+                                    <img src="assets/images/Slider/laptop-cover.jpg" alt="" uk-cover>
+                                </a>
+                                <div
+                                    class="uk-overlay uk-overlay-default uk-position-bottom-right uk-position-small uk-transition-slide-right text-right uk-border-rounded">
+                                    <h3 class="uk-margin-remove sfont">جدیدترین تکنولوژی ها</h3>
+                                    <p class="uk-margin-remove">
+                                    <div>
+                                        <span class="fas fa-star text-warning"></span>
+                                        <span class="fas fa-star text-warning"></span>
+                                        <span class="fas fa-star text-warning"></span>
+                                    </div>
+                                    <span class="fas fa-user-alt ml-2"></span>
+                                    نویسنده : استیو جابز
+                                    </p>
+                                </div>
+                            </li>
+                            <!-- Item Slider -->
+                        </ul>
+                        <!--  Slider Items -->
+                        <div class="uk-light">
+                            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#"
+                                uk-slidenav-previous uk-slideshow-item="previous"></a>
+                            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#"
+                                uk-slidenav-next uk-slideshow-item="next"></a>
+                        </div>
+                        <!-- Button Next and Previous -->
+                    </div>
+                </div>
+                <!-- Slider -->
+                <div class="col-lg-4 col-md-12 mt-1">
+                    <div class="uk-inline">
+                        <a href="#"><img class="height-150 uk-border-rounded uk-box-shadow-medium"
+                                src="assets/images/Slider/image (2).jpg" alt=""></a>
+                        <div class="uk-overlay uk-light uk-position-bottom">
+                            <p class="text-white">
+                                <span class="uk-label bg-warning text-dark">
+                                    لپ تاپ
+                                </span>
+                                <br>
+                                برترین زبان های برنامه نویسی 2021
+                                <br><br>
+                                <span class="small">
+                                    <i class="fas fa-user mx-2"></i>
+                                    استیو جابز
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- New Event1 -->
+                    <div class="uk-inline mt-2">
+                        <a href="#"><img class="height-150 uk-border-rounded uk-box-shadow-medium"
+                                src="assets/images/Slider/laptop-cover.jpg" alt=""></a>
+                        <div class="uk-overlay uk-light uk-position-bottom">
+                            <p class="text-white">
+                                <span class="uk-label bg-danger text-light">
+                                    لپ تاپ
+                                </span>
+                                <br>
+                                برترین لپ تاپ های سال 2021
+                                <br><br>
+                                <span class="small">
+                                    <i class="fas fa-user mx-2"></i>
+                                    بیل گیتس
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- New Event2 -->
+                </div>
+                <!-- New Events -->
+            </div>
+        </div>
+        <!-- Container -->
+    </header>
+    <!-- Slider and new Events -->
+
+    <section class="bg-light mt-5">
+        <hr>
+        <div class="container py-3">
+            <div class="uk-grid-small text-right" uk-grid>
+                <div class="uk-width-expand" uk-leader="fill: _">رویداد ها</div>
+                <div>
+                    <a href="#">
+                        <div class="uk-label uk-label-success">
+                            <span class="fas fa-eye ml-2"></span>
+                            مشاهده بیشتر
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Show More Event -->
+            <div class="row my-3">
+                <div class="col-md-3 mt-3">
+                    <div class="uk-inline">
+                        <a href="#"><img class="height-150 uk-border-rounded uk-box-shadow-medium"
+                                src="assets/images/Events/inRqLEr.jpg" alt=""></a>
+                        <div class="uk-overlay uk-light uk-position-bottom">
+                            <p class="text-white text-right">
+                                <span class="uk-label bg-warning text-dark">
+                                    لپ تاپ
+                                </span>
+                                <br>
+                                <span class="bg-white text-dark px-2 uk-border-pill">
+                                    آب شدن یخ های قطب
+                                    <br><br>
+                                    <span class="small">
+                                        <i class="fas fa-user mx-2"></i>
+                                        طبیعت زیبا
+                                    </span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Event Item -->
+
+                <div class="col-md-3 mt-3">
+                    <div class="uk-inline">
+                        <a href="#"><img class="height-150 uk-border-rounded uk-box-shadow-medium"
+                                src="assets/images/Events/mb (5).jpg" alt=""></a>
+                        <div class="uk-overlay uk-light uk-position-bottom">
+                            <p class="text-white text-right">
+                                <span class="uk-label bg-primary text-white">
+                                    موبایل
+                                </span>
+                                <br>
+                                <span class="bg-white text-dark px-2 uk-border-pill">
+                                    پرچمدار جدید سامسونگ
+                                    <br><br>
+                                    <span class="small">
+                                        <i class="fas fa-user mx-2"></i>
+                                        سامسونگ
+                                    </span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Event Item -->
+
+                <div class="col-md-3 mt-3">
+                    <div class="uk-inline">
+                        <a href="#">
+                            <img class="height-150 uk-border-rounded uk-box-shadow-medium"
+                                src="assets/images/Events/women-calligrapher-in-cozy-home-working.jpg" alt="">
+                        </a>
+                        <div class="uk-overlay uk-light uk-position-bottom">
+                            <p class="text-right">
+                                <span class="uk-label bg-success text-white">
+                                    لپ تاپ
+                                </span>
+                                <br>
+                                <span class="bg-white text-dark px-2 uk-border-pill">
+                                    جامعه آماری بانوانان مستقل
+                                    <br><br>
+                                    <span class="small">
+                                        <i class="fas fa-user mx-2"></i>
+                                        آماندا سایفر
+                                    </span>
+                                </span>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Event Item -->
+
+                <div class="col-md-3 mt-3">
+                    <div class="uk-inline">
+                        <a href="#">
+                            <img class="height-150 uk-border-rounded uk-box-shadow-medium"
+                                src="assets/images/Events/image (1).jpg" alt="">
+                        </a>
+                        <div class="uk-overlay uk-light uk-position-bottom">
+                            <p class="text-light text-right">
+                                <span class="uk-label bg-info text-white">
+                                    لپ تاپ
+                                </span>
+                                <br>
+                                <span class="bg-white text-dark px-2 uk-border-pill">
+                                    برای موفقیت در برنامه نویسی
+                                    <br><br>
+                                    <span class="small">
+                                        <i class="fas fa-user mx-2"></i>
+                                        مارک زاکربرگ
+                                    </span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Event Item -->
+
+            </div>
+            <!-- Events -->
+        </div>
+        <!-- Container -->
+        <hr>
+    </section>
+    <!-- Events -->
+
+    <section class="mt-4">
+        <div class="container py-3">
+            <div class="uk-grid-small text-right mb-2" uk-grid>
+                <div class="uk-width-expand" uk-leader="fill: _">اخبار</div>
+                <div>
+                    <a href="#">
+                        <div class="uk-label uk-label-success">
+                            <span class="fas fa-eye ml-2"></span>
+                            مشاهده بیشتر
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Show More News -->
+            <div class="row">
+                <div class="col-md-5">
+                    <p class="text-right text-muted">
+                        خبر مهم
+                    </p>
+                    <div class="uk-card text-right">
+                        <div class="uk-card-media-top">
+                            <a href="#">
+                                <div class="uk-inline">
+                                    <img class="uk-border-rounded uk-box-shadow-medium"
+                                        src="assets/images/News/makran.jpg" alt="">
+                                    <div class="uk-overlay uk-light uk-position-bottom">
+                                        <p class="text-white">
+                                            <span class="uk-label bg-primary text-white">
+                                                ارتش جمهوری اسلامی ایران
+                                            </span>
+                                            <span class="small">
+                                                <i class="fas fa-eye mx-2"></i>
+                                                500
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="uk-card-body pt-1 px-1">
+                            <a class="text-decoration-none" href="#">
+                                <h3 class="uk-card-title sfont">
+                                    قدرت نمایی ارتش ایران در برابر آمریکا
+                                </h3>
+                            </a>
+                            <p class="small">
+                                <a class="text-secondary text-decoration-none" href="#">
+                                    <span class="fas fa-user ml-2"></span>
+                                    جام جم
+                                </a>
+                                <a class="text-secondary text-decoration-none float-left" href="#">
+                                    <span class="fas fa-clock ml-2"></span>
+                                    فروردین 1400
+                                </a>
+                            </p>
+                            <p class="text-justify">
+                                بار دیگر ارتش جمهوری اسلامی ایران با نمایش قدرت موشکی خود و قدرت نمایی در آب های آزاد
+                                مشت کوبنده ای بر دهان دشمنان ایران زد .
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Top Hot News -->
+                <div class="col-md-4">
+                    <p class="text-right text-muted">
+                        اخبار روز
+                    </p>
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s text-right" uk-grid="">
+                        <div class="uk-card-media-left uk-cover-container">
+                            <a href="#">
+                                <img class="uk-border-rounded uk-box-shadow-medium" src="assets/images/News/haj_ghasem_solaymani.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <div class="mx-3">
+                                <h3 class="uk-card-title text-danger sfont mt-0">نظامی</h3>
+                                <p>سردار شهید حاج قاسم سلیمانی</p>
+                                <p class="text-muted small">
+                                    <span class="fas fa-clock ml-2"></span>
+                                    تیر 1400
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s text-right" uk-grid="">
+                        <div class="uk-card-media-left uk-cover-container">
+                            <a href="#">
+                                <img class="uk-border-rounded uk-box-shadow-medium" src="assets/images/News/zarif.jpg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <div class="mx-3">
+                                <h3 class="uk-card-title text-warning sfont mt-0">بین الملل</h3>
+                                <p>نتیجه مذاکرات با آمریکا</p>
+                                <p class="text-muted small">
+                                    <span class="fas fa-clock ml-2"></span>
+                                    مرداد 1400
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s text-right" uk-grid="">
+                        <div class="uk-card-media-left uk-cover-container">
+                            <a href="#">
+                                <img class="uk-border-rounded uk-box-shadow-medium" src="assets/images/News/rayisi.jpg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <div class="mx-3">
+                                <h3 class="uk-card-title text-primary sfont mt-0">اجتماعی</h3>
+                                <p>برخورد قاطع با مجرمین اقتصادی</p>
+                                <p class="text-muted small">
+                                    <span class="fas fa-clock ml-2"></span>
+                                    شهریور 1400
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hot News -->
+                <div class="col-md-3">
+                    <p class="text-right text-muted">
+                        شبکه های اجتماعی
+                    </p>
+                    <div class="row">
+                        <div class="col-6 sborder">
+                            <div class="py-1 m-0">
+                                <div class="float-right">
+                                    <span class="fab fa-facebook-square fa-2x text-primary"></span>
+                                </div>
+                                <div class="float-left">
+                                    13.2 هزار
+                                    <br>
+                                    <small class="text-muted">فالوور</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 sborder">
+                            <div class="py-1 m-0">
+                                <div class="float-right">
+                                    <span class="fab fa-twitter-square fa-2x text-info"></span>
+                                </div>
+                                <div class="float-left">
+                                    13.2 هزار
+                                    <br>
+                                    <small class="text-muted">فالوور</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 sborder">
+                            <div class="py-1 m-0">
+                                <div class="float-right">
+                                    <span class="fab fa-youtube-square fa-2x text-danger"></span>
+                                </div>
+                                <div class="float-left">
+                                    13.2 هزار
+                                    <br>
+                                    <small class="text-muted">فالوور</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 sborder">
+                            <div class="py-1 m-0">
+                                <div class="float-right">
+                                    <span class="fab fa-instagram-square fa-2x instagram-logo"></span>
+                                </div>
+                                <div class="float-left">
+                                    13.2 هزار
+                                    <br>
+                                    <small class="text-muted">فالوور</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Social Network -->
+                    <div class="mt-5">
+                        <div class="alertNews uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light text-center uk-border-rounded uk-box-shadow-medium"
+                            data-src="assets/images/Slider/image (2).jpg" uk-img="">
+                            <p>
+                                <span class="text-danger mx-1"> تکنولوژی </span>روز دنیا در دستان تو
+                                <br>
+                                <a class="uk-button uk-border-pill text-dark bg-white mt-3" href="#">می خوام بروز
+                                    باشم</a>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Advertising -->
+                </div>
+                <!-- Social Network -->
+            </div>
+        </div>
+        <!-- Container -->
+    </section>
+    <!-- News -->
+
+    <section class="bg-light">
+        <hr>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="sets: true">
+
+            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-6@m">
+                <li>
+                    <img class="uk-border-rounded" src="assets/images/Image Slider/m_slider (1).JPG">
+                </li>
+                <!-- Min Image -->
+                <li>
+                    <img class="uk-border-rounded" src="assets/images/Image Slider/m_slider (2).JPG">
+                </li>
+                <!-- Min Image -->
+                <li>
+                    <img class="uk-border-rounded" src="assets/images/Image Slider/m_slider (3).JPG">
+                </li>
+                <!-- Min Image -->
+                <li>
+                    <img class="uk-border-rounded" src="assets/images/Image Slider/m_slider (4).JPG">
+                </li>
+                <!-- Min Image -->
+                <li>
+                    <img class="uk-border-rounded" src="assets/images/Image Slider/m_slider (5).JPG">
+                </li>
+                <!-- Min Image -->
+                <li>
+                    <img class="uk-border-rounded" src="assets/images/Image Slider/m_slider (6).JPG">
+                </li>
+                <!-- Min Image -->
+                <li>
+                    <img class="uk-border-rounded" src="assets/images/Image Slider/m_slider (7).JPG">
+                </li>
+                <!-- Min Image -->
+                <li>
+                    <img class="uk-border-rounded" src="assets/images/Image Slider/m_slider (8).JPG">
+                </li>
+                <!-- Min Image -->
+                <li>
+                    <img class="uk-border-rounded" src="assets/images/Image Slider/m_slider (9).JPG">
+                </li>
+                <!-- Min Image -->
+                <li>
+                    <img class="uk-border-rounded" src="assets/images/Image Slider/m_slider (10).JPG">
+                </li>
+                <!-- Min Image -->
+                <li>
+                    <img class="uk-border-rounded" src="assets/images/Image Slider/m_slider (11).JPG">
+                </li>
+                <!-- Min Image -->
+
+            </ul>
+
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                uk-slider-item="previous"></a>
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                uk-slider-item="next"></a>
+
+        </div>
+        <hr>
+    </section>
+    <!-- Image Slider -->
+
+    <section class="uk-background-secondary">
+        <div class="container-fluid my-5">
+            <div class="uk-card uk-card-default text-white uk-card-body uk-box-shadow-small uk-background-secondary">
+
+                <div class="row">
+                    <div class="col-md-8">
+
+                        <div class="uk-grid-small text-right mb-3" uk-grid>
+                            <div class="uk-width-expand" uk-leader="fill: _">فیلم ها</div>
+                            <div>
+                                <a href="#">
+                                    <div class="uk-label uk-label-success">
+                                        <span class="fas fa-eye ml-2"></span>
+                                        مشاهده بیشتر
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Show More News -->
+                        <div class="text-right">
+                            <a href="#">
+                                <img src="assets/images/Video/V (1).jpg" class="uk-border-rounded"
+                                    style="width: 100%;height: 390px;" alt="Responsive Video">
+                            </a>
+                            <p class="text-justify" style="line-height: 2em;">
+                                فیلم : Mortal Kombat 2021
+                                <br>
+                                فیلم Mortal Kombat (مبارزات مرگبار) یک فیلم اکشن، ماجراجویی و فانتزی محصول سال ۲۰۲۱ کشور
+                                آمریکا و استرالیا به کارگردانی Simon McQuoid است که توسط کمپانی New Line Cinema تولید و
+                                منتشر شد؛ نویسندگی این فیلم را نیز Greg Russo و Dave Callaham برعهده داشته و بازیگرانی
+                                چون لوئیس تان، جسیکا مک نامی، جاش لاوسون، تادانوبو آسانو، مهکاد بروکس، لودی لین، چین
+                                هان، جو تسلیم، هیرویوکی سانادا و غیره در آن به ایفای نقش پرداخته‌اند
+                            </p>
+                            <a class="uk-button uk-button-default uk-border-pill float-left text-white"
+                                href="#">تماشا</a>
+                        </div>
+                        <!-- Video -->
+                    </div>
+                    <!-- Movies -->
+
+                    <div class="col-md-4">
+                        <div class="uk-grid-small text-right mb-3" uk-grid>
+                            <div class="uk-width-expand" uk-leader="fill: _">فیلم های بیشتر</div>
+                            <div>
+                                <a href="#">
+                                    <div class="uk-label uk-label-success">
+                                        <span class="fas fa-eye ml-2"></span>
+                                        مشاهده بیشتر
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- More Video Title -->
+
+                        <div class="uk-card uk-grid-collapse uk-child-width-1-2@s text-right mb-3" uk-grid="">
+                            <div class="uk-card-media-left uk-cover-container">
+                                <a href="#">
+                                    <img class="uk-border-rounded uk-box-shadow-medium height-150"
+                                        src="assets/images/Video/V (2).JPG" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <div class="mx-3 mt-2">
+                                    <p>انیمیشن The Mitchells vs the Machines 2021</p>
+                                    <p class="text-muted small">
+                                        <span class="fas fa-clock ml-2"></span>
+                                        اردیبهشت 1400
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- More Video -->
+                        <div class="uk-card uk-grid-collapse uk-child-width-1-2@s text-right mb-3" uk-grid="">
+                            <div class="uk-card-media-left uk-cover-container">
+                                <a href="#">
+                                    <img class="uk-border-rounded uk-box-shadow-medium height-150"
+                                        src="assets/images/Video/V (4).JPG" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <div class="mx-3 mt-2">
+                                    <p>دانلود فیلم Nobody 2021 دوبله فارسی</p>
+                                    <p class="text-muted small">
+                                        <span class="fas fa-clock ml-2"></span>
+                                        اردیبهشت 1400
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- More Video -->
+
+                    </div>
+                    <!-- More Movies -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Movies -->
+
+    <section class="bg-white my-5">
+        <div class="container py-3">
+            <div class="uk-grid-small text-right" uk-grid>
+                <div class="uk-width-expand" uk-leader="fill: _">مقالات</div>
+                <div>
+                    <a href="#">
+                        <div class="uk-label uk-label-success">
+                            <span class="fas fa-eye ml-2"></span>
+                            مشاهده بیشتر
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Show More Blog -->
+            <div class="row my-3 text-right">
+
+                <div class="col-md-4 mt-3">
+                    <div class="uk-card uk-card-default uk-border-rounded">
+                        <div class="uk-card-media-top">
+                            <div class="uk-inline">
+                                <a href="#"><img class="height-150 uk-border-rounded uk-box-shadow-medium"
+                                        src="assets/images/Blog/laravel.jpg" alt=""></a>
+                                <div class="uk-overlay uk-light uk-position-bottom">
+                                    <span class="uk-label text-dark">
+                                        برنامه نویسی
+                                    </span>
+                                    <h3 class="uk-card-title bg-light sfont uk-border-pill text-center">
+                                        بررسی تغییرات لاراول 6
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card-body">
+                            <p class="text-justify">
+                                لاارول 6 در جولای 2019 معرفی شد و توسعه دهندگان این فریم ورک، امکانات جدید آن را به
+                                برنامه نویسان معرفی کردند
+                            </p>
+                            <a class="uk-button uk-button-default uk-button-small uk-border-pill float-left"
+                                href="#">مطالعه</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Item -->
+
+                <div class="col-md-4 mt-3">
+                    <div class="uk-card uk-card-default uk-border-rounded">
+                        <div class="uk-card-media-top">
+                            <div class="uk-inline">
+                                <a href="#"><img class="height-150 uk-border-rounded uk-box-shadow-medium"
+                                        src="assets/images/Blog/python.jpg" alt=""></a>
+                                <div class="uk-overlay uk-light uk-position-bottom">
+                                    <span class="uk-label text-dark">
+                                        برنامه نویسی
+                                    </span>
+                                    <h3 class="uk-card-title bg-light sfont uk-border-pill text-center">
+                                        آموزش نصب پایتون
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card-body">
+                            <p class="text-justify">
+                                پایتون زبانی کاربردی است که بسیاری از برنامه نویسان از آن به عنوان زبانی شیرین یاد کرده
+                                و در زمینه‌های مختلف از آن استفاده می‌کنند
+                            </p>
+                            <a class="uk-button uk-button-default uk-button-small uk-border-pill float-left"
+                                href="#">مطالعه</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Item -->
+
+                <div class="col-md-4 mt-3">
+                    <div class="uk-card uk-card-default uk-border-rounded">
+                        <div class="uk-card-media-top">
+                            <div class="uk-inline">
+                                <a href="#"><img class="height-150 uk-border-rounded uk-box-shadow-medium"
+                                        src="assets/images/Blog/laravel.jpg" alt=""></a>
+                                <div class="uk-overlay uk-light uk-position-bottom">
+                                    <span class="uk-label text-dark">
+                                        برنامه نویسی
+                                    </span>
+                                    <h3 class="uk-card-title bg-light sfont uk-border-pill text-center">
+                                        نسخه‌های لاراول
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card-body">
+                            <p class="text-justify">
+                                لاارول 6 در جولای 2019 معرفی شد و توسعه دهندگان این فریم ورک، امکانات جدید آن را به
+                                برنامه نویسان معرفی کردند
+                            </p>
+                            <a class="uk-button uk-button-default uk-button-small uk-border-pill float-left"
+                                href="#">مطالعه</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Item -->
+
+                <div class="col-md-4 mt-3">
+                    <div class="uk-card uk-card-default uk-border-rounded">
+                        <div class="uk-card-media-top">
+                            <div class="uk-inline">
+                                <a href="#"><img class="height-150 uk-border-rounded uk-box-shadow-medium"
+                                        src="assets/images/Blog/python.jpg" alt=""></a>
+                                <div class="uk-overlay uk-light uk-position-bottom">
+                                    <span class="uk-label text-dark">
+                                        برنامه نویسی
+                                    </span>
+                                    <h3 class="uk-card-title bg-light sfont uk-border-pill text-center">
+                                        نصب پایتون در اوبونتو (Ubuntu 18)
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card-body">
+                            <p class="text-justify">
+                                پایتون زبانی کاربردی است که بسیاری از برنامه نویسان از آن به عنوان زبانی شیرین یاد کرده
+                                و در زمینه‌های مختلف از آن استفاده می‌کنند
+                            </p>
+                            <a class="uk-button uk-button-default uk-button-small uk-border-pill float-left"
+                                href="#">مطالعه</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Item -->
+
+                <div class="col-md-4 mt-3">
+                    <div class="uk-card uk-card-default uk-border-rounded">
+                        <div class="uk-card-media-top">
+                            <div class="uk-inline">
+                                <a href="#"><img class="height-150 uk-border-rounded uk-box-shadow-medium"
+                                        src="assets/images/Blog/laravel.jpg" alt=""></a>
+                                <div class="uk-overlay uk-light uk-position-bottom">
+                                    <span class="uk-label text-dark">
+                                        برنامه نویسی
+                                    </span>
+                                    <h3 class="uk-card-title bg-light sfont uk-border-pill text-center">بررسی تغییرات
+                                        لاراول 6</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card-body">
+                            <p class="text-justify">
+                                لاارول 6 در جولای 2019 معرفی شد و توسعه دهندگان این فریم ورک، امکانات جدید آن را به
+                                برنامه نویسان معرفی کردند
+                            </p>
+                            <a class="uk-button uk-button-default uk-button-small uk-border-pill float-left"
+                                href="#">مطالعه</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Item -->
+
+                <div class="col-md-4 mt-3">
+                    <div class="uk-card uk-card-default uk-border-rounded">
+                        <div class="uk-card-media-top">
+                            <div class="uk-inline">
+                                <a href="#"><img class="height-150 uk-border-rounded uk-box-shadow-medium"
+                                        src="assets/images/Blog/python.jpg" alt=""></a>
+                                <div class="uk-overlay uk-light uk-position-bottom">
+                                    <span class="uk-label text-dark">
+                                        برنامه نویسی
+                                    </span>
+                                    <h3 class="uk-card-title bg-light sfont uk-border-pill text-center">
+                                        آموزش نصب پایتون
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card-body">
+                            <p class="text-justify">
+                                پایتون زبانی کاربردی است که بسیاری از برنامه نویسان از آن به عنوان زبانی شیرین یاد کرده
+                                و در زمینه‌های مختلف از آن استفاده می‌کنند
+                            </p>
+                            <a class="uk-button uk-button-default uk-button-small uk-border-pill float-left"
+                                href="#">مطالعه</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Item -->
+
+            </div>
+            <!-- Blogs Item -->
+        </div>
+        <!-- Container -->
+    </section>
+    <!-- Blogs -->
+
+    <section class="uk-background-success  pb-3">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 text-right">
+                    <img class="logo2" src="assets/images/logo2.png" alt="logo Main">
+                    <h2 class="text-white sfont mr-3 uk-display-inline-block">عضویت در خبرنامه ما</h2>
+                </div>
+                <!-- Join Us Logo -->
+
+                <div class="col-md-6 text-left">
+                    <div class="d-flex flex-row-reverse bd-highlight my-4">
+                        <div class="p-2 bd-highlight">
+                            <button type="submit" class="btn btn-dark px-3">
+                                <span class="fas fa-paper-plane"></span>
+                                عضویت
+                            </button>
+                        </div>
+                        <div class="p-2 bd-highlight">
+                            <input type="email" class="uk-input uk-border-rounded uk-border-" placeholder="ایمیل شما">
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Join Us Emain -->
+            </div>
+        </div>
+    </section>
+    <!-- Join Us -->
+
+    <footer class="uk-background-secondary text-white pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-right">
+                    <div class="uk-grid-small text-right mb-2" uk-grid>
+                        <div class="uk-width-expand uk-text-large" uk-leader="fill: _">درباره ما</div>
+                    </div>
+                    <p class="text-justify">
+                        طراحی و ساخت قالب های زیبای برای وب سایت شما ، کاملا رسپانسیو و متناسب با انواع پلتفرم های مختلف
+                    </p>
+                    <p class="text-justify"><span class="fas fa-home ml-2"></span>
+                        آدرس : ایران _ اصفهان
+                    </p>
+                    <p class="text-justify"><span class="fas fa-phone ml-2"></span>
+                        تلفن : 212-564-980+
+                    </p>
+                    <p class="text-justify"><span class="fas fa-mail-bulk ml-2"></span>
+                        ایمیل : info@example.com
+                    </p>
+                    <p>
+                    <div class="row">
+                        <div class="col-3"><a href="#"><span class="fab fa-facebook fa-2x text-white"></span></a></div>
+                        <div class="col-3"><a href="#"><span class="fab fa-twitter fa-2x text-white"></span></a></div>
+                        <div class="col-3"><a href="#"><span class="fab fa-youtube fa-2x text-white"></span></a></div>
+                        <div class="col-3"><a href="#"><span class="fab fa-linkedin fa-2x text-white"></span></a></div>
+                    </div>
+                    </p>
+                </div>
+                <!-- About US -->
+                <div class="col-md-4">
+                    <div class="uk-grid-small text-right mb-2" uk-grid>
+                        <div class="uk-width-expand uk-text-large" uk-leader="fill: _">پربازدید ترین ها</div>
+                    </div>
+                    <!-- Footer News Title -->
+                    <div class="card uk-background-secondary uk-border-rounded text-right" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <a href="#"><img src="assets/images/Mobile/mb (2).jpg" style="height: 90px;" class="card-img"
+                                        alt="..."></a>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <a class="text-decoration-none" href="#">
+                                        <p class="sfont text-white">جدید ترین پرچمداران گوشی ها</p>
+                                    </a>
+                                    <p class="card-text"><small class="text-white">آذر 1400</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer News item -->
+                    <div class="card uk-background-secondary uk-border-rounded text-right" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <a href="#"><img src="assets/images/Mobile/mb (3).jpg" style="height: 90px;" class="card-img"
+                                        alt="..."></a>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <a class="text-decoration-none" href="#">
+                                        <p class="sfont text-white">پرچمدار جدید سامسونگ</p>
+                                    </a>
+                                    <p class="card-text"><small class="text-white">آبان 1400</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer News item2 -->
+                    <div class="card uk-background-secondary uk-border-rounded text-right" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <a href="#"><img src="assets/images/Mobile/mb (5).jpg" style="height: 90px;" class="card-img"
+                                        alt="..."></a>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <a class="text-decoration-none" href="#">
+                                        <p class="sfont text-white">بررسی گوشی S21 Lite</p>
+                                    </a>
+                                    <p class="card-text"><small class="text-white">مهر 1400</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer News item3 -->
+                </div>
+                <!-- More Viewer -->
+                <div class="col-md-3">
+                    <div class="mt-5">
+                        <div class="alertNews uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light text-center uk-border-rounded"
+                            data-src="assets/images/Slider/image (2).jpg" uk-img="">
+                            <p>
+                                <span class="text-danger mx-1"> تکنولوژی </span>روز دنیا در دستان تو
+                                <br>
+                                <a class="uk-button uk-border-pill text-dark bg-white mt-3" href="#">می خوام بروز
+                                    باشم</a>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Learn Tecnologe -->
+                </div>
+                <!-- Advertising -->
+            </div>
+            <hr>
+        </div>
+        <div class="pb-1">
+            <div class="container text-right">
+                <p class="small">
+                    &copy; 1400 , دیجی نیوز
+                    _
+                    قالب خبری ، مجله ای ، وبلاگی
+                    _
+                    توسعه توسط MSB SOFT
+                    <span class="float-left">
+                        I <span class="fas fa-heart text-danger"></span> IRAN - ESFAHAN
+                    </span>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- JavaScripts -->
+    <script src="assets/js/vendor/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/uikit.js"></script>
+    <script src="assets/js/vendor/uikit-icons.js"></script>
+    <script src="assets/js/vendor/fontawesome-free-5.15.3-web.min.js"></script>
+    <script src="assets/js/Script.js"></script>
+</body>
+
+</html>
